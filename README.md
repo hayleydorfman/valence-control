@@ -15,15 +15,25 @@ Code for the model fitting can be found here and on the first author's GitHub. T
 Variable Key
 
 feedback: reward feedback received (0 = negative outcome, 1 = positive outcome)
+
 latent_agent: did the latent agent intervene on this trial? (0 = no, 1 = yes)
+
 subject: unique, non-identifiable subject ID number
+
 latent_prob: probability of latent agent intervention for this version of the task
+
 mine_prob_win_left: probability of a positive outcome for the stimulus on the left side
+
 mine_prob_win_right: probability of a positive outcome for the stimulus on the right side
+
 latent_guess: button press for subject guess about latent agent intervention (0 = no, agent did not intervene, 1 = yes, agent did intervene)
+
 block_num: block order
+
 trial_num: trial number
+
 condition: condition (1 = adversarial, 2 = benvolent, or 3 = random)
+
 subj_choice: button press (1 = left, 2 = right)
 
 Contact
