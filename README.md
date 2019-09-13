@@ -1,6 +1,9 @@
 # valence-control
 Data, code, and tasks for Dorfman, et al., 2019, Psych Science.
 
+Citation for use of any code, data, or task: 
+Dorfman, H. M., Bhui, R., Hughes, B. L., & Gershman, S. J. (2019). Causal Inference About Good and Bad Outcomes. Psychological Science, 133, 956797619828724. http://doi.org/10.1177/0956797619828724
+
 Tasks
 
 The behavioral tasks used for both experiments in the paper are provided here. They were written using Josh deLeeuw's jsPsych toolbox (http://www.jspsych.org/).
