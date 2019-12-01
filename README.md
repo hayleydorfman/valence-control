@@ -13,7 +13,7 @@ Both tasks require communication with a PHP server in order to run. You can achi
 Data
 
 The data for all of the participants included in both experiments are provided here. The variable names can be found in the headers of these csv files, and a key is provided below. The csvs provided have been minimally processed for ease of use specifically for model-fitting (i.e., single subject csvs have been concatenated, all output has been made numeric, and variables unnecessary for analyses have been removed).
-Code for the model fitting can be found here and on the first author's GitHub. These analyses require the mfit package developed by Sam Gershman (https://github.com/sjgershm/mfit). Many of the plotting and modeling functions were also developed by Sam Gershman.
+Code for the model fitting can be found here and on the OSF. These analyses require the mfit package developed by Sam Gershman (https://github.com/sjgershm/mfit). Many of the plotting and modeling functions were also developed by Sam Gershman.
 
 Variable Key
 
