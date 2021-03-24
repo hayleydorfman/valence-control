@@ -8,7 +8,7 @@ Tasks
 
 The behavioral tasks used for both experiments in the paper are provided here. They were written using Josh deLeeuw's jsPsych toolbox (http://www.jspsych.org/).
 
-Both tasks require communication with a PHP server in order to run. You can achieve this by running them on your own domain, or by using a tool like XAMPP to run the PHP server locally. You could also use an easy-to-use experiment hosting service like https://www.cognition.run/. Please note that slight modifications may need to be made to the existing code to either run the task locally or on a hosting service. For example, the consent and data save functions will need to be commented out in order to run the task locally (if you do not have PHP capabilities). If you are not familiar with running online experiments and wish to run this one, I would recommend starting with the documentation/tutorials and Github discussion forum for jsPsych.
+Both tasks will not run "out of the box" because they require communication with a PHP server. You can achieve this by running them on your own domain, or by using a tool like XAMPP to run the PHP server locally. You could also use an easy-to-use experiment hosting service, my favorite of which is: https://www.cognition.run/. Please note that slight modifications may need to be made to the existing code to either run the task locally or on a hosting service. For example, the consent and data save functions will need to be commented out in order to run the task locally (if you do not have PHP capabilities). For more information on running online jsPsych experiments, please see the extensive documentation available on the jsPsych website, Github discussion forum, and particularly here: https://www.jspsych.org/overview/running-experiments/.
 
 Data
 
