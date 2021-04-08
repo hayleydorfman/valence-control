@@ -15,10 +15,10 @@ function [results, bms_results] = fit_models(experiment,results,models)
     
     if experiment == 1
         filename = 'exp1_data.csv'; %exp1
-        likfuns = {'lik_asym' 'lik_asym_sticky' 'lik_rational4'};
+        likfuns = {'lik_asym_sticky' 'lik_rational4'};
     elseif experiment == 2 %exp 2
         filename = 'exp2_data.csv';
-        likfuns = {'lik_asym' 'lik_asym_sticky' 'lik_rational4' 'lik_rational_adaptive'};
+        likfuns = {'lik_asym_sticky' 'lik_rational4' 'lik_rational_adaptive'};
     end
     data = load_data(filename);
     
