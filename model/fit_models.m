@@ -52,7 +52,7 @@ function [results, bms_results] = fit_models(experiment,results,models)
             case 'lik_rational4'
                 param(1) = struct('name','invtemp','logpdf',@(x) log(gampdf(x,4.82,0.88)),'lb',1e-3,'ub',20);
                 param(2) = struct('name','sticky','logpdf',@(x) 0,'lb',-5,'ub',5);
-                likfuns{m} = 'lik_rational';
+                likfuns{m} = 'lik_rational4';
                 
             case 'lik_rational_adaptive'
                 param(1) = struct('name','invtemp','logpdf',@(x) log(gampdf(x,4.82,0.88)),'lb',1e-3,'ub',20);
