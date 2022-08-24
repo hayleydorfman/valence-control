@@ -1,9 +1,9 @@
 function lik = lik_asym_sticky(x,data)
     
-    % "Heuristic" model for Dorfman, et al., 2018
-    % Likelihood function for Q-learning on two-armed bandit with separate
+    % Likelihood function for "Six Learning Rate" model for Dorfman, et al., 2019
+    % Q-learning on two-armed bandit with separate
     % learning rates for positive and negative outcomes in different
-    % conditions.
+    % conditions (i.e., 6 learning rate model).
     %
     % USAGE: lik = lik_asym_sticky(x,data)
     %

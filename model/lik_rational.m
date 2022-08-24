@@ -1,14 +1,15 @@
-function [lik,latents] = lik_rational4(x,data)
+function [lik,latents] = lik_rational(x,data)
     
-    % Liklihood function for "Empirical Bayesian" model for Dorfman, et al., 2019
-    % 
+    % Liklihood function for "Bayesian" model for Dorfman, et al., 2019
+    % Fixes probablity of agenct intervention at 30% to match task
+    % structure
     %
     % USAGE: lik = rllik2(x,data)
     %
     % INPUTS:
     %   x - parameters:
     %       x(1) - inverse temperature
-    %       x(2) - stickiness
+    %       x(2:7) - learning rates
     %   data - structure with the following fields
     %          .c - [N x 1] choices
     %          .r - [N x 1] rewards
@@ -16,12 +17,18 @@ function [lik,latents] = lik_rational4(x,data)
     % OUTPUTS:
     %   lik - log-likelihood
     %
-    % Sam Gershman
+    % Sam Gershman, June 2017
     
     % parameters
     b = x(1);           % inverse temperature
     sticky = x(2);      % stickiness
-    pz = mean(data.latent_guess); %probability of external agent intervention
+    if length(x) == 3
+        PZ = zeros(1,3)+x(3);
+    elseif length(x) == 5
+        PZ = x(3:5);
+    else
+        PZ = zeros(1,3)+0.3;       % probability of intervention; in this case fixed at 30%
+    end
     
     % initialization
     alpha = 1;
@@ -43,6 +50,7 @@ function [lik,latents] = lik_rational4(x,data)
         lik = lik + q(c) - logsumexp(q,2); %likelihood equation
         rpe = r-v(c); %reward prediction error (received reward - previous value of choice)
         
+        pz = PZ(data.cond);
         if r == 1 %if reward received = 1
             if data.cond(n)==1 %if condition = adversarial
                 psi = 1; %then probability of agent NOT intervening = 100%
