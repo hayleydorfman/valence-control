@@ -4,13 +4,13 @@ Citation for use of any code, data, or task: Dorfman, H. M., Bhui, R., Hughes, B
 
 All materials found here can also be found on the first author’s GitHub: https://github.com/hayleydorfman/valence-control).
 
-Modeling code and some analysis and plotting functions were developed by Sam Gershman. Updates and tutorials for modeling code can be found at his GitHub: https://github.com/sjgershm/mfit.
+Modeling code, some analysis code, and plotting functions were developed by Sam Gershman. Updates and tutorials for modeling code can be found at his GitHub: https://github.com/sjgershm/mfit.
 
 **Tasks**
 
 The behavioral tasks used for both experiments in the paper are provided here. They were written using Josh deLeeuw's jsPsych toolbox (http://www.jspsych.org/).
 
-Both tasks will not run "out of the box" because they require communication with a PHP server. You can achieve this by running them on your own domain, or by using a tool like XAMPP to run the PHP server locally. You could also use an easy-to-use experiment hosting service, my favorite of which is Cognition (https://www.cognition.run/).
+Both tasks will not run "out of the box" because they require communication with a PHP server. You can achieve this by running them on your own domain, or by using a tool like XAMPP to run the PHP server locally. You could also use an easy-to-use experiment hosting service - my favorite of which is Cognition (https://www.cognition.run/).
 
 Please also note that slight modifications may need to be made to the existing code to either run the task locally or on a hosting service. For example, the consent and data save functions will need to be commented out in order to run the task locally (if you do not have PHP capabilities). For more information on running online jsPsych experiments, please see the extensive documentation available on the jsPsych website, Github discussion forum, and particularly here (https://www.jspsych.org/overview/running-experiments/).
 
@@ -53,7 +53,7 @@ The data for all of the participants included in both experiments are provided h
 
 **Model Fitting**
 
-1.	Download or copy the entire ‘model’ folder and the csv data files to your local computer. There may be MATLAB dependencies/functions necessary to run the models that you may need to download separately. One of these dependencies will be the MATLAB Optimization Toolbox (https://www.mathworks.com/products/optimization.html). 
+1.	Download or copy the entire ‘model’ folder and the csv data files to your local computer. There may be MATLAB dependencies/functions necessary to run the models that you may need to download separately. This includes the MATLAB Optimization Toolbox (https://www.mathworks.com/products/optimization.html) and the Statistics and Machine Learning Toolbox (https://www.mathworks.com/products/statistics.html). 
 2.	Open ‘model’ folder in MATLAB (version 2019b or later preferred)
 3.	Make sure a copy of the data csv file you want to fit models to is located in the ‘model’ folder/in the location on your computer where you are running models.
 4.	Type the following in the MATLAB command window:
@@ -100,7 +100,7 @@ Fitting your models will create two output files: 1) results and 2) bms_results.
 
 ***‘results’:***
 
-This is where you will find the models you compared and their fitted parameters.  For example, ‘results(1).x’ will index all of the free parameters for the first model. ‘results(1).latents’ will index output for the dynamic parameters from the Bayesian models.
+This is where you will find the models you compared and their fitted parameters.  For example, ‘results(1).x’ will index all of the free parameters for the first model. ‘results(1).latents’ will index output for the dynamic parameters from the Bayesian models (if there is an applicable Bayesian model listed first).
 
 ***‘bms_results’:***
 
@@ -108,7 +108,7 @@ This is where you will find the model comparison values for each model (displaye
 
 **Plotting**
 
-You can use the ‘plot_results.m’ file to generate plots from the paper.
+You can use the ‘plot_results.m’ file to generate plots from the paper. Please refer to the usage information at the top of the file.
 
 **Model File Key**
 
