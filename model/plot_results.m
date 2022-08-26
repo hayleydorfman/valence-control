@@ -1,7 +1,7 @@
 
 % Plotting and (some) analysis functions for Dorfman, et al., 2019
 % USAGE: plot_results(casename)
-% EXAMPLE: plot_results('learning_rates')
+% EXAMPLE: plot_results('learning_rates',results,data)
 
 
 function plot_results(fig,results,data)
