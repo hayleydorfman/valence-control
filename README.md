@@ -59,7 +59,7 @@ The data for all of the participants included in both experiments are provided h
 4.	Type the following in the MATLAB command window:
 
 **data = load_data("mydataframename.csv")** [hit return/enter] 
-(NOTE: If you are using the data from our 2019 paper, this filename would be either ‘exp1_behav_data.csv’ or ‘exp2_behav_data.csv’)
+(NOTE: If you are using the data from our 2019 paper, this filename would be either ‘exp1_data.csv’ or ‘exp2_data.csv’)
 
 **[results, bms_results] = fit_models(1)** [hit return/enter]
 
@@ -77,7 +77,7 @@ The following files/lines can be modified depending on your goals:
 
 **load_data.m**
 
- - If you neglect to input a csv filename in the “data = load_data” line above, this will automatically load a file called “exp1_behav_data.csv.”
+ - If you neglect to input a csv filename in the “data = load_data” line above, this will automatically load a file called “exp1_data.csv.”
 
 **Any file that begins with “lik_”.m**
 
