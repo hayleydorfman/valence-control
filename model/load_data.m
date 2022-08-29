@@ -3,7 +3,7 @@ function data = load_data(fname)
 % Load data into matlab and format for model fitting
 % USAGE: data = load_data(myfilename.csv)
 
-    if nargin < 1; fname = 'exp1_behav_data.csv'; end % change based on the name of your dataframe
+    if nargin < 1; fname = 'exp1_data.csv'; end % change based on the name of your dataframe
     
     f = fopen(fname); y = regexp(fgetl(f),',','split');
     fclose(f);
